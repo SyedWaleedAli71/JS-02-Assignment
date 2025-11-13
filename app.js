@@ -372,25 +372,30 @@
 // document.writeln(num +"x 1 = " + num * 10 + "<br>");
 
 // Q.6
-// var subject1 = prompt("Enter name of subject 1:");
-// var subject2 = prompt("Enter name of subject 2:");
-// var subject3 = prompt("Enter name of subject 3:");
+
+// 
+// var subject1 = prompt("Enter first subject name:");
+// var subject2 = prompt("Enter second subject name:");
+// var subject3 = prompt("Enter third subject name:");
+
 // var totalMarks = 100;
-// var marksObtained1 = +prompt("Enter marks obtained in " + subject1 + ":");
-// var marksObtained2 = +prompt("Enter marks obtained in " + subject2 + ":");
-// var marksObtained3 = +prompt("Enter marks obtained in " + subject3 + ":");
-// var totalObtained = marksObtained1 + marksObtained2 + marksObtained3;
-// var percentage1 = (marksObtained1 / totalMarks) * 100;
-// var percentage2 = (marksObtained2 / totalMarks) * 100;
-// var percentage3 = (marksObtained3 / totalMarks) * 100;
-// var overallPercentage = (totalObtained / (totalMarks * 3)) * 100;
-// document.writeln("<table border='1'>");
-// document.writeln("<tr><th>
-// Subject</th><th>Total Marks</th><th>Marks Obtained</th><th>Percentage</th></tr>");
-// document.writeln("<tr><td>" + subject1 + "</td><td>" + totalMarks + "</td><td>" + marksObtained1 + "</td><td>" + percentage1.toFixed(2) + "%</td></tr>");
-// document.writeln("<tr><td>" + subject2 + "</td><td>" + totalMarks + "</td><td>" + marksObtained2 + "</td><td>" + percentage2.toFixed(2) + "%</td></tr>");
-// document.writeln("<tr><td>" + subject3 + "</td><td>" + totalMarks + "</td><td>" + marksObtained3 + "</td><td>" + percentage3.toFixed(2) + "%</td></tr>");
-// document.writeln("<tr><th></th><th>" + (totalMarks * 3) + "</th><th>" + totalObtained + "</th><th>" + overallPercentage.toFixed(2) + "%</th></tr>");
-// document.writeln("</table>");
-// document.writeln("<h1>Rules for naming JS variables</h1>");
+
+// var obtained1 = +prompt("Enter obtained marks for " + subject1 + ":");
+// var obtained2 = +prompt("Enter obtained marks for " + subject2 + ":");
+// var obtained3 = +prompt("Enter obtained marks for " + subject3 + ":");
+
+// var totalObtained = obtained1 + obtained2 + obtained3;
+// var grandTotal = totalMarks * 3; 
+// var percentage = (totalObtained / grandTotal) * 100;
+
+// document.writeln("<h2>Mark Sheet</h2>");
+
+// document.writeln(subject1 + " — Obtained: " + obtained1 + " / 100<br>");
+// document.writeln(subject2 + " — Obtained: " + obtained2 + " / 100<br>");
+// document.writeln(subject3 + " — Obtained: " + obtained3 + " / 100<br><br>");
+
+// document.writeln("<b>Total Marks:</b> " + grandTotal + "<br>");
+// document.writeln("<b>Total Obtained:</b> " + totalObtained + "<br>");
+// document.writeln("<b>Percentage:</b> " + percentage.toFixed(2) + "%");
+
 
