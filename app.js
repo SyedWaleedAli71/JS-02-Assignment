@@ -48,7 +48,7 @@
 
 
 
-// Chapter 3 (Variables for numbers)
+// ******************Chapter 3 (Variables for numbers)
 
 // Q.1
 // var caseQty;
@@ -88,7 +88,7 @@
 // newNum = num + 10;
 // alert(newNum);
 
-// VARIABLE NAMES: LEGAL & ILLEGAL
+// *****************VARIABLE NAMES: LEGAL & ILLEGAL***************
 // Q.1
 // var name, age, country;
 // var name = "Waleed", age = 22, country = "Pakistan";
@@ -122,7 +122,7 @@
     // document.writeln("<p>Variable names should not be JS keywords.</p>");
 
 
-    // MATH EXPRESSIONS****
+    // **********************MATH EXPRESSIONS**********************
     // Q.1
     // var num1 = 10;
     // var num2 = 20;
@@ -153,7 +153,7 @@
 // document.writeln("<p>Variable names should not be JS keywords.</p>");
 
 
-// MATH EXPRESSIONS****
+// ***************************MATH EXPRESSIONS**********************
 // Q.1
 // var num1 = 10;
 // var num2 = 20;
@@ -327,4 +327,70 @@
 // document.writeln("Amount of snacks per day: " + estAmountPerDay + "<br>");
 // document.writeln("You will need " + totalNeeded + " " + favSnack + " to last you until the ripe old age of " + maxAge + "<br>");
 
+
+// 
+// ******************************MATH EXPRESSIONS********************************
+
+// Q.1
+// var num = 10;
+// var result = ((num + 5) * 2) / 3;
+// ((10 + 5=15)*2=30)/3=10;
+// document.writeln("The final result is: " + result);
+
+// Q.2
+// var a = 2, b = 1;
+// var result = --a - --b + ++b + b--;
+// --a = 1
+// --a - --b = 1 - 0 = 1
+// --a - --b + ++b = 1 + 1 = 2
+// --a - --b + ++b + b-- = 2 + 1 = 3
+// document.writeln("The final result is: " + result);
+//
+
+
+// Q.3
+// var userName = prompt("Enter your name:");
+// alert("Welcome " + userName + "!");
+//
+
+
+// Q.4
+// Q.5
+// var num = prompt("Enter a number for multiplication table:");
+
+// num = num || 5;
+
+// document.writeln(num +"x 1 = " + num * 1 + "<br>");
+// document.writeln(num +"x 1 = " + num * 2 + "<br>");
+// document.writeln(num +"x 1 = " + num * 3 + "<br>");
+// document.writeln(num +"x 1 = " + num * 4 + "<br>");
+// document.writeln(num +"x 1 = " + num * 5 + "<br>");
+// document.writeln(num +"x 1 = " + num * 6 + "<br>");
+// document.writeln(num +"x 1 = " + num * 7 + "<br>");
+// document.writeln(num +"x 1 = " + num * 8 + "<br>");
+// document.writeln(num +"x 1 = " + num * 9 + "<br>");
+// document.writeln(num +"x 1 = " + num * 10 + "<br>");
+
+// Q.6
+// var subject1 = prompt("Enter name of subject 1:");
+// var subject2 = prompt("Enter name of subject 2:");
+// var subject3 = prompt("Enter name of subject 3:");
+// var totalMarks = 100;
+// var marksObtained1 = +prompt("Enter marks obtained in " + subject1 + ":");
+// var marksObtained2 = +prompt("Enter marks obtained in " + subject2 + ":");
+// var marksObtained3 = +prompt("Enter marks obtained in " + subject3 + ":");
+// var totalObtained = marksObtained1 + marksObtained2 + marksObtained3;
+// var percentage1 = (marksObtained1 / totalMarks) * 100;
+// var percentage2 = (marksObtained2 / totalMarks) * 100;
+// var percentage3 = (marksObtained3 / totalMarks) * 100;
+// var overallPercentage = (totalObtained / (totalMarks * 3)) * 100;
+// document.writeln("<table border='1'>");
+// document.writeln("<tr><th>
+// Subject</th><th>Total Marks</th><th>Marks Obtained</th><th>Percentage</th></tr>");
+// document.writeln("<tr><td>" + subject1 + "</td><td>" + totalMarks + "</td><td>" + marksObtained1 + "</td><td>" + percentage1.toFixed(2) + "%</td></tr>");
+// document.writeln("<tr><td>" + subject2 + "</td><td>" + totalMarks + "</td><td>" + marksObtained2 + "</td><td>" + percentage2.toFixed(2) + "%</td></tr>");
+// document.writeln("<tr><td>" + subject3 + "</td><td>" + totalMarks + "</td><td>" + marksObtained3 + "</td><td>" + percentage3.toFixed(2) + "%</td></tr>");
+// document.writeln("<tr><th></th><th>" + (totalMarks * 3) + "</th><th>" + totalObtained + "</th><th>" + overallPercentage.toFixed(2) + "%</th></tr>");
+// document.writeln("</table>");
+// document.writeln("<h1>Rules for naming JS variables</h1>");
 
